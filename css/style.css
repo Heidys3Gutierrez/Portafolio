@@ -1,0 +1,466 @@
+/* selector de etiqueta Ej: header-section-article-nav */
+/*
+header
+{
+    background: grey;
+    color: hotpink;
+} 
+*/
+/* selector de hijos o descendente Ej: body header div nav ol li a*/
+/* selector de clase Ej: ".nombre de la clase"*/
+/* selector de id Ej: "#nombre del id" */
+/* .flexbox
+{
+    display: flex;
+    flex-wrap: wrap;  ningun elemento caiga a la parte inferior o sea que no siga en la parte de abajo
+    -WRAP- es para que siga en la arte de abajo o sea en la parte inferior.
+    flex-direction: column; tengo 4 cuadros con ciertas dimensiones pero al agregar màs altera las dimensiones,
+    entonces esta propiedad hace que no se alteren las dimensiones pero los cuadros salen en columna.
+} 
+.box
+{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    flex-shrink: 0; Para que no se altere al ancho ni el alto.
+    margin: 10px;
+} */
+.header
+{
+    /*  align-items: center; */
+    margin-left: 174px;
+    margin-right: 174px;
+    background-color: #6b6b6b;
+    color: white;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ol,
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+figure
+{
+    margin: 0;
+}
+
+.header a
+{
+    color: white;
+    text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.menu
+{
+    height: inherit;
+}
+
+.header ol
+{
+    display: flex;
+    height: inherit;
+    /* align-items: center; */
+}
+
+.header ol li
+{
+    height: inherit;
+}
+
+.flexbox {
+    display: flex;
+    /* flex-wrap: nowrap; */
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+  }
+  
+  .box {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border: 1px solid red;
+  
+    flex-shrink: 0;
+  }
+
+
+body
+{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0px;
+    background-color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Fjalla One', sans-serif; /* Tipo de fuente */
+    font-weight: normal; /* Grueso de fuente */
+    /* font-style: italic; */ /* si lo quiero en cursiva o normal */
+}
+
+h1
+{
+    /*text-decoration: dashed; para colocar subrayado, tachado, etc*/
+    /* margin: 10px 10px 7px 3px; */
+    font-size: 40px;  /* Tamaño de fuente */
+    line-height: 1.5; /* Espacio entre lineas */
+    letter-spacing: -.2px; /* Espacio entre letras */
+    /* text-transform: uppercase; */ /* Cambiar de fuente por defecto ej:cambiarlas a mayusculas */
+    color: white;
+    margin: 0px;
+    
+    
+}
+
+h1 strong
+{
+    color: black;   
+}
+
+h2
+{
+    color: #fa474a;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold; /* Negrita */
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.hero
+{
+    /* background-repeat: no-repeat; */
+    /* background-position-x: right; */
+    /* background-image: url("../imagen/AK.jpg"); */
+    /* background-size: 500px 300px; */
+    margin-left: 174px;
+    margin-right: 174px;
+    height: 300px;
+    background-color: #6b6b6b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.hero-image
+{
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    object-fit: cover; /* vuelve las dimensiones origianles de la imagen */
+}
+
+.portfolio
+{
+    background: black;
+    padding: 20px;
+}
+
+.project
+{
+  /*border-top: 10px solid grey; se puede definir como tamaño, tipo y estilo del borde
+    border-right: 10px solid grey;
+    border-left: 10px solid grey;
+    border-bottom: 10px solid grey; 
+    border-top-color: "color"; para colocar color al borde de un solo lado y asi se hace con todos los lados
+    color: "color"; si no le coloco color al borde el por defecto toma el color de la letra
+    border-top-left-radius: 50px; para redondear un solo lado
+    border-top-color: grey;
+    border-top-width: 10px;
+    border-top-style: solid; */
+    /* margin-bottom: 15px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-left: 0px; */
+    border: 1px solid grey;
+    border-radius: 10px;
+    /* margin: 10px; */
+    margin-bottom: 15px;
+    padding: 20px;
+    /* padding-top: 0px; */
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}  
+
+.project-course,
+.project-date,
+.project-url
+{
+    margin: 10px 0;
+}
+
+.project-title
+{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.project-details
+{
+    width: 500px;
+}
+
+.project-imageContainer
+{
+    width: 500px;
+}
+
+.project-description
+{
+    font-size: 20px;
+}
+
+.project strong
+{
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.event
+{
+    /* padding: 20px;
+    padding-top: 0px; 
+    flex-shrink: 0; para mantener el tamaño de varias divisiones*/
+    /* border: 1px solid grey ; */
+    border-radius: 10px;
+    margin: 10px;
+    width: 480px;
+    overflow: hidden; /* Cuando una imagen se desborda de susu limites esta propiedad oculta los bordes */;
+    background: #f4fbff;
+    flex-shrink: 0;
+}
+
+.event img
+{
+    width: 480px;
+    height: 200px;
+    object-fit: cover; /* Para cambiar la proporcion de la imagen */
+}
+
+.event-details
+{
+    margin: 20px 40px;
+    margin-top: -40px;
+    background-color: white;
+    position: relative; 
+    padding: 20px;
+    text-align: center;
+}
+
+.event-description
+{
+    text-align: left;
+}
+
+.event-list
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.event-list-title
+{
+    margin-left: 20px;
+}
+
+.event-url
+{
+    color: #056fff;
+    border: 1px solid;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.contact
+{
+    border-radius: 10px;
+    background-color: #fa474a;
+    margin-left: 174px;
+    margin-right: 174px;
+    color: black;
+    height: 150px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-email input
+{
+    border-color: gray;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px 20px 10px 25px;
+    background-image: url("../imagen/gmail.png");
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+
+}
+
+.form-email button
+{
+     
+     
+    display: block;
+    background: transparent;
+    color: white;
+    padding: 10px 0;
+    width: 100px;
+    border-radius: 5px;
+    margin-top: 10px;
+    /* margin: 10px auto 0; */
+}
+
+.form-email h3
+{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container 
+{
+    /* border: 1px solid red; */
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
+
+.container-list 
+{
+    /* border: 1px solid red; */
+    width: 100%;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
+
+.social
+{
+    /* border: 1px solid #fa474a; */
+}
+
+.social-link
+{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0px 10px;
+    background-size: 50px 50px;
+}
+
+.social-link.twitter
+{
+    background-image: url("../imagen/twitter.png");
+}
+
+.social-link.facebook
+{
+    background-image: url("../imagen/facebook.png");
+}
+
+.social-link.instagram
+{
+    background-image: url("../imagen/instagram.png");
+}
+
+.footer
+{
+    margin-left: 174px;
+    margin-right: 174px;
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.footer img
+{
+    vertical-align: middle;
+}
+
+.footer a
+{
+    color: yellowgreen;
+}
+
+.profile
+{
+    border-radius: 10px;
+    margin: 10px;
+    width: 100%;
+    overflow: hidden;
+    background: #f4fbff;
+    flex-shrink: 0;
+}
+
+.profile img
+{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+    object-fit: cover; 
+}    
+
+.profile-details
+{
+    margin: 20px 20px 20px 20px;
+    margin-top: 0px;
+    background-color: white;
+    position: relative; 
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-description
+{
+    text-align: left;
+    height: 150px;
+}
+
+.profile-list
+{
+    width: 25%;
+    display: inline-block;
+    justify-content: space-between;
+    margin: 10px;
+}     
+
+.profile-list-title
+{
+    margin-left: 20px;
+}
+
+.profile-container{
+    text-align: center;
+    margin: 0 auto;
+}
